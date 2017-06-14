@@ -1,0 +1,17 @@
+{
+  "name": "jugnoo",
+  "version": "0.0.1",
+  "description": "jugnoo app for google places and hotel search",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "author": "Abhishek Kumar Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
