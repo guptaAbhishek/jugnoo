@@ -34,8 +34,7 @@
 
 
     app.controller("myCtrl",['$scope','dataFactory',function($scope,dataFactory){
-
-
+        $scope.hola = "w ";
     }]);
 
 
