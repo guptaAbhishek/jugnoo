@@ -9,10 +9,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="style.css" type="text/css">
     <!--Start of Cards Css-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"></script>
 
     <script src="app.js"></script>
+
 
 </head>
 <style>
@@ -49,8 +51,53 @@
 
 
 <div class="container" style="margin-left: 0px;" ng-controller="myCtrl as ctrl">
+    <div class="row">
+        <h2 style="margin-left: 1%;">Jugnoo Hotel Search</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <input id="autocomplete" class="form-control" type="text" placeholder="Enter the place to search for the hotels, e.g. New Delhi" >
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="listing" style="">
+        <table id="resultsTable">
+            <tbody id="results"></tbody>
+        </table>
+    </div>
+
+    <!--<div style="display: none">-->
+        <!--<div id="info-content">-->
+            <!--<table>-->
+                <!--<tr id="iw-url-row" class="iw_table_row">-->
+                    <!--<td id="iw-icon" class="iw_table_icon"></td>-->
+                    <!--<td id="iw-url"></td>-->
+                <!--</tr>-->
+                <!--<tr id="iw-address-row" class="iw_table_row">-->
+                    <!--<td class="iw_attribute_name">Address:</td>-->
+                    <!--<td id="iw-address"></td>-->
+                <!--</tr>-->
+                <!--<tr id="iw-phone-row" class="iw_table_row">-->
+                    <!--<td class="iw_attribute_name">Telephone:</td>-->
+                    <!--<td id="iw-phone"></td>-->
+                <!--</tr>-->
+                <!--<tr id="iw-rating-row" class="iw_table_row">-->
+                    <!--<td class="iw_attribute_name">Rating:</td>-->
+                    <!--<td id="iw-rating"></td>-->
+                <!--</tr>-->
+                <!--<tr id="iw-website-row" class="iw_table_row">-->
+                    <!--<td class="iw_attribute_name">Website:</td>-->
+                    <!--<td id="iw-website"></td>-->
+                <!--</tr>-->
+            <!--</table>-->
+        <!--</div>-->
+    <!--</div>-->
 
 </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1g3KsAlWNeC0KSIrsNiAEoMYVkhk1urM&libraries=places&callback=initMap" async defer></script>
+<script src="maps.js"></script>
 </body>
 
 
